@@ -5,7 +5,6 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
-var filter = require('gulp-filter');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -19,7 +18,7 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-  return gulp.src('scss/freelancer.scss')
+  return gulp.src('scss/agency.scss')
     .pipe(sass())
     .pipe(header(banner, {
       pkg: pkg
@@ -32,7 +31,7 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/freelancer.css')
+  return gulp.src('css/agency.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -47,7 +46,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-  return gulp.src('js/freelancer.js')
+  return gulp.src('js/agency.js')
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
@@ -77,9 +76,6 @@ gulp.task('copy', function() {
 
   gulp.src(['node_modules/jquery.easing/*.js'])
     .pipe(gulp.dest('vendor/jquery-easing'))
-
-  gulp.src(['node_modules/magnific-popup/dist/*'])
-    .pipe(gulp.dest('vendor/magnific-popup'))
 
   gulp.src([
       'node_modules/font-awesome/**',
