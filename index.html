@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
     <title>Sidecar Learning</title>
 
     <!-- Bootstrap core CSS -->
@@ -22,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   </head>
 
@@ -42,12 +44,12 @@
               <a class="nav-link js-scroll-trigger" href="#services">Product
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
@@ -63,6 +65,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
+            <img src="img/logos/sidecar2.png" style = "width: 20%; margin: 15px;" ></img>
           <div class="intro-lead-in">Sidecar Learning</div>
           <div class="intro-heading text-uppercase">Empowering
             interactive, authentic student learning.</div>
@@ -121,7 +124,7 @@ impact of their training programs. Extensively tested for use in schools,
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <!-- <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -216,10 +219,10 @@ impact of their training programs. Extensively tested for use in schools,
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- About -->
-    <section id="about">
+    <!-- <section id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -297,7 +300,7 @@ impact of their training programs. Extensively tested for use in schools,
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Team -->
     <section class="bg-light" id="team">
@@ -305,15 +308,23 @@ impact of their training programs. Extensively tested for use in schools,
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Designing engaging educational experiences for a combined 43 years.</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+
+                    </div>
+                  </div>
+                  <img class="img-fluid mx-auto rounded-circle" src="img/team/Jason Dewland.png" alt="">
+                </a>
+              <h4>Jason Dewland</h4>
+              <p class="text-muted">Co-Founder<br>Business & Project Manager</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -333,11 +344,18 @@ impact of their training programs. Extensively tested for use in schools,
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+
+                    </div>
+                  </div>
+                  <img class="img-fluid mx-auto rounded-circle" src="img/team/yvonne.jpg" alt="">
+                </a>
+              <h4>Yvonne Mery</h4>
+              <p class="text-muted">Co-Founder <br>Chief Education Officer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -356,35 +374,12 @@ impact of their training programs. Extensively tested for use in schools,
                 </li>
               </ul>
             </div>
+            <div class="col-sm-3"></div>
           </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">We are a group of librarians with a combined 43 years within the field of k-12 and
+            <p class="large text-muted">We are a group of librarians with a combined 43 years within the field of K-12 and
 higher education. We are committed to student learning and have conducted extensive
 research in how technology can best support authentic student learning.</p>
           </div>
@@ -393,7 +388,7 @@ research in how technology can best support authentic student learning.</p>
     </section>
 
     <!-- Clients -->
-    <section class="py-5">
+    <!-- <section class="py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6">
@@ -418,7 +413,7 @@ research in how technology can best support authentic student learning.</p>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
     <section id="contact">
@@ -470,7 +465,7 @@ research in how technology can best support authentic student learning.</p>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+            <span class="copyright">Copyright &copy; Sidecar Learning 2018</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -521,18 +516,21 @@ research in how technology can best support authentic student learning.</p>
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
+                  <h2 class="text-uppercase">Jason Dewland</h2>
+                  <p class="item-intro text-muted"><strong>Co-Founder<br>Business & Project Manager</strong></p>
+                  <img class="img-fluid d-block mx-auto" src="img/team/Jason Dewland.png" alt="">
+                  <p class="item-intro text-muted">MBA, University of Maryland<br>MLIS, Wayne State University</p>
+                  <p>Jason Dewland is a co-founder of Sidecar Learning and serves as the Business & Project Manager.  Jason came to this project because of his extensive use of the platform.  He has utilized the platform to teach over 3000 student business research skills on a multitude of different platforms.</p>
+                  <p>As Associate Librarian at the University of Arizona, works in the Research & Learning department where he serves as a business and tech transfer librarian.  He has partnered with the McGuire Center for Entrepreneurship to provide the students there with an in-depth knowledge of business intelligence research.  In his role as a tech transfer librarian he co-founded a unique partnership between the University of Arizona Libraries and Tech Launch Arizona, he is the coordinator of a team of librarians that provide patent and market research in support of University of Arizona technology.</p>
+                  <p>Prior to entering the library profession he worked as a purchasing manager in the automotive industry, as a consultant to small manufactures, and as a project manager in the information technology sector.  He also served in the Peace Corps in Macedonia and Ukraine as a business consultant.</p>
+                  <!-- <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Threads</li>
                     <li>Category: Illustration</li>
-                  </ul>
+                  </ul> -->
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -555,15 +553,18 @@ research in how technology can best support authentic student learning.</p>
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
+                  <h2 class="text-uppercase">Jason Dewland</h2>
+                  <p class="item-intro text-muted"><strong>Co-Founder<br>Chief Education Officer</strong></p>
+                  <img class="img-fluid d-block mx-auto" src="img/team/yvonne.jpg" alt="">
+                  <p class="item-intro text-muted">MBA, University of Maryland<br>MLIS, Wayne State University</p>
+                  <p>Associate Librarian at the University of Arizona Libraries, Yvonne is part of the Research and Learning department where she serves as an instructional design librarian for projects from across the Library. Yvonne has designed and implemented online courses in information literacy skills for undergraduate students and collaborated with departments across campus to support students and instructors in their research needs. </p>
+                  <p>Yvonne has co-authored several papers and a book on the integration of information literacy in online classes and presented at numerous national and international conferences on best practices for online information literacy instruction. Yvonne has also designed and delivered workshops and courses in instructional design and development. She has extensive experience working with a diverse group of students in departments across campus. </p>
+                  <p>Yvonne holds an MA in Library Sciences and an MA in Teaching English as a Second Language in addition to a BA in English Literature. Yvonne is an active member of several national associations including the e-learning Guild, EDUCAUSE, and the American Library Association.</p>
+                  <!-- <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Explore</li>
                     <li>Category: Graphic Design</li>
-                  </ul>
+                  </ul> -->
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
