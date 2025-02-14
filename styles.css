@@ -61,6 +61,33 @@ h2 {
     font-size: 0.95rem;
 }
 
+.app-access {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+}
+
+.app-note {
+    color: #666;
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+}
+
+.app-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.app-button:hover {
+    background-color: #0056b3;
+}
+
 .faq-item {
     margin-bottom: 1.5rem;
     background: white;
@@ -98,4 +125,38 @@ h2 {
 
 .download-links a:hover {
     text-decoration: underline;
+}
+
+.certificate-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.certificate-link:hover {
+    text-decoration: underline;
+}
+
+.contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: var(--section-bg);
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #666;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
 }
